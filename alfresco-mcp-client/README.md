@@ -86,7 +86,7 @@ The application is configured using the `application.properties file. Below are 
     Run the Application:
 
     ```bash
-    java -jar target/alfresco-mcp-client.jar
+    java -jar target/alfresco-mcp-client-0.8.0.jar
     ```
 
     View Output: The application will execute predefined questions and print the AI model's responses to the console.
