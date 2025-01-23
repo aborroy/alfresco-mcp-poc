@@ -2,7 +2,7 @@
 
 This repository contains a Proof of Concept (PoC) for integrating Alfresco as a [Model Context Protocol server](https://modelcontextprotocol.io/quickstart/server). The project demonstrates how to connect Alfresco capabilities to AI using standard client-server applications.
 
-![General Diagram](docs/diagram)
+![General Diagram](docs/diagram.png)
 
 ## Project Structure
 
