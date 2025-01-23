@@ -1,6 +1,10 @@
 #!/usr/bin/env node
 /**
  * Alfresco REST API Server implementing Model Context Protocol Server
+ * 
+ * This service provides a REST API interface to interact with Alfresco repositories.
+ * It supports operations like reading node metadata, downloading node content, and searching nodes.
+ * The service is built using the Model Context Protocol SDK and communicates via stdio.
  */
 
 import 'dotenv/config';
@@ -134,7 +138,6 @@ const server = new Server(
   }
 );
 
-// Enhanced request handlers with improved error management
 server.setRequestHandler(ReadResourceRequestSchema, async (request) => {
   try {
     const nodeId = request.params.uri.replace("alfresco://", "");
@@ -168,7 +171,6 @@ server.setRequestHandler(ReadResourceRequestSchema, async (request) => {
   }
 });
 
-// Tool definitions remain similar to original implementation
 server.setRequestHandler(ListToolsRequestSchema, async () => ({
   tools: [
     {
