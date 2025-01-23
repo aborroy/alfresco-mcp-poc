@@ -1,0 +1,16 @@
+{
+  "name": "alfresco-mcp-server",
+  "version": "1.0.0",
+  "description": "Alfresco REST + Model Context Protocol",
+  "type": "module",
+  "scripts": {
+    "start": "node alfresco-rest-server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "latest",
+    "dotenv": "^16.4.7"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
